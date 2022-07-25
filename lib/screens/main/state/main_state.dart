@@ -3,7 +3,6 @@ abstract class MainState {
 }
 
 class HomeState extends MainState {
-  // List<dynamic> usersList = [];
   HomeState();
 }
 
@@ -11,6 +10,9 @@ class FavoriteState extends MainState {
   FavoriteState();
 }
 
+class SearchState extends MainState{
+  SearchState();
+}
 
 class ProfileState extends MainState {
   ProfileState();

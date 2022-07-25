@@ -1,9 +1,15 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:newsnew/screens/home/cubit/home_cubit.dart';
 import 'package:newsnew/screens/home/view/home_view.dart';
 import 'package:newsnew/screens/main/view/main_view.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(const MyApp()
+  );
 }
 
 class MyApp extends StatelessWidget {

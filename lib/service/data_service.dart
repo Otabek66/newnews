@@ -12,7 +12,7 @@ class DataService {
       var data = await FirebaseFirestore.instance.collection('allnews').get();
       dataList = data.docs;
       debugPrint(dataList.length.toString());
-      debugPrint(dataList[1]['arts'][0]['title'].toString());
+      debugPrint(dataList[1]['health'][0]['title'].toString());
       return dataList;
     } catch (e) {
       debugPrint('ERROR >>>> $e');
