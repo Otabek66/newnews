@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newsnew/screens/home/view/home_view.dart';
+import 'package:newsnew/screens/main/view/main_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeView(),
+      home: Homeview(),
     );
   }
 }
